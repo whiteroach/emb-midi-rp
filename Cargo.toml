@@ -23,11 +23,11 @@ fixed = "1.23.1"
 fixed-macro = "1.2"
 
 
+# oled_async = { version = "0.1.0", features = ["ssd1306", "embedded-graphics"] }
 cortex-m = { version = "0.7.6", features = ["inline-asm"] }
 cortex-m-rt = "0.7.0"
 critical-section = "1.1"
 panic-probe = { version = "1.0.0", features = ["print-defmt"] }
-display-interface-spi = "0.5.0"
 embedded-graphics = "0.8.1"
 mipidsi = "0.9.0"
 display-interface = "0.5.0"
@@ -46,6 +46,9 @@ portable-atomic = { version = "1.5", features = ["critical-section"] }
 log = "0.4"
 rand = { version = "0.9.0", default-features = false }
 embedded-sdmmc = "0.9.0"
+
+ssd1306 =  { git = "https://github.com/rust-embedded-community/ssd1306.git", features = ["async"] }
+display-interface-i2c = "0.5.0"
 
 [profile.release]
 # Enable generation of debug symbols even on release builds
