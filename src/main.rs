@@ -52,6 +52,7 @@ async fn main(_spawner: Spawner) {
             last_midi_value = midi_value;
         } 
 
+        show_cc(&mut disp, last_midi_value).await;
         info!("MIDI {}", last_midi_value);
 
         Timer::after_millis(100).await;

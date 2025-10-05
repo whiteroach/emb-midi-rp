@@ -47,7 +47,7 @@ log = "0.4"
 rand = { version = "0.9.0", default-features = false }
 embedded-sdmmc = "0.9.0"
 
-ssd1306 =  { git = "https://github.com/rust-embedded-community/ssd1306.git", features = ["async"] }
+ssd1306 =  {  git = "https://github.com/rust-embedded-community/ssd1306.git", features = ["async"] }
 display-interface-i2c = "0.5.0"
 
 [profile.release]
